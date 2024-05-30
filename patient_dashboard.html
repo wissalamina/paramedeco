@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord du patient</title>
+</head>
+<body>
+    <a href="deconnexion_patient.php">Se deconnecter</a>
+    <div>
+    <a href="historique_rendezvous.php">Historique des rendez-vous</a>
+    </div>
+<!-- Votre contenu de page -->
+
+<script>
+    window.addEventListener('beforeunload', function (e) {
+        navigator.sendBeacon('update_status.php', JSON.stringify({status: 'hors ligne'}));
+    });
+    </script>
+    
+    
+
+</body>
+</html>

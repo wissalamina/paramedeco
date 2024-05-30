@@ -1,0 +1,134 @@
+/* CSS pour le bouton "Ajouter" */
+.add-button {
+    background-color: #87CEEB; /* Bleu ciel */
+    color: black; /* Couleur du texte noire */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    position: fixed; /* Position fixe */
+    top: 20px; /* Espacement du haut de la page */
+    right: 20px; /* Espacement de la droite de la page */
+    transition: background-color 0.3s, color 0.3s; /* Transition au survol */
+    text-decoration: none; /* Supprimer le soulignement du texte */
+}
+
+.add-button:hover {
+    background-color: #287bff; /* Bleu légèrement plus foncé au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+.show-button {
+    background-color: #87CEEB; /* Bleu ciel */
+    color: black; /* Couleur du texte noire */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Coins arrondis */
+    margin-top: 40px; /* Espacement vers le bas */
+    left:23%;
+    position: relative; /* Position relative par rapport à son conteneur parent */
+    top: 60px; /* Déplacer le bouton vers le bas de 20 pixels */
+}
+
+/* Nouveau style pour la liste déroulante */
+.select-box {
+    background-color: white;
+    color: black;
+    border: yes;
+    padding: 0px 0px;
+    border-radius: 2px;
+    margin-top: 40px;
+    margin-right: 10px; /* Espacement à gauche pour placer la liste déroulante à côté du bouton */
+    position: relative; /* Position relative par rapport à son conteneur parent */
+    left: 23%;
+    top: 60px; /* Déplacer le bouton vers le bas de 20 pixels */
+}
+
+.show-button:hover {
+    background-color: #287bff; /* Bleu légèrement plus foncé au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+/* CSS pour le titre "Liste des membres" */
+h2 {
+    position: absolute; /* Position absolue */
+    top: 100px; /* Espacement du haut (ajustez selon vos besoins) */
+    left: calc(50% - 15%); /* Déplacer le titre de moitié de sa propre largeur vers la gauche */
+    width: 30%; /* Largeur équivalente à celle du tableau */
+    left: 40%;
+}
+
+/* CSS pour le tableau des membres */
+/* Style du tableau */
+table {
+    margin: 75px auto; /* Espacement autour du tableau */
+    position: absolute;
+    left: 57%;
+    transform: translateX(-100%);
+    border-collapse: collapse;
+    width: 50%; /* Ajuster la largeur du tableau */
+    max-width: 50px; /* Largeur maximale du tableau */
+    min-width: 50px; /* Largeur minimale du tableau */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    font-size: 12px; /* Réduire la taille de la police pour un tableau plus compact */
+}
+
+/* Style des cellules du tableau */
+th, td {
+    border: 1px solid #ddd;
+    padding: 100px; /* Réduit la taille de l'espacement interne des cellules */
+    text-align: left;
+}
+
+/* Style de l'en-tête du tableau */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 5px; /* Réduit la taille de l'espacement interne des en-têtes */
+}
+
+/* Style des lignes impaires */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Style des liens dans le tableau */
+a {
+    color: #287bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Nouveau style pour le bouton de suppression */
+.delete-button {
+    background-color: #cc0000; /* Rouge */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Supprimer le soulignement du texte */
+}
+
+.delete-button:hover {
+    background-color: #ff4d4d; /* Rouge plus foncé au survol */
+}
+
+.modifier-link {
+    background-color: #0fc718; /* Vert */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Supprimer le soulignement du texte */
+}
+
+.modifier-link:hover {
+    background-color: #4dff91; /* Vert plus foncé au survol */
+}
